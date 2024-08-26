@@ -19,7 +19,7 @@ export default eventHandler(async (event) => {
     }
     const videoId = path.substring(path.lastIndexOf('/') + 1, path.length)
     if (videoId) {
-      const url = 'https://api22-normal-c-alisg.tiktokv.com/aweme/v1/feed/'
+      const url = 'https://dl-api.abishnoi.me'
       const data: RootObject = await $fetch(url, {
         params: {
           aweme_id: videoId,
